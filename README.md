@@ -4,6 +4,8 @@ Simple discord bot that sets its nickname to the price of BTC or ETH,
 or crypto dominance (BTC.D / ETH.D)  
 You can switch mode in `.env`.
 
+<img width="422" height="398" alt="Image" src="https://github.com/user-attachments/assets/91dbbbb3-fe53-4afc-8ad0-979d410ca18f" />
+
 Examples:
 - BTC   → Shows BTC price + 24h percent change in status
 - ETH   → Same thing but for eth
