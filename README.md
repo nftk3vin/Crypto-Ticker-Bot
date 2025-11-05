@@ -13,7 +13,9 @@ Examples:
 ## .env file example
 
 BOT_TOKEN=yourbot_token_here
-GUILD_ID=1171682017214214184
+
+GUILD_ID=your_guild_id
+
 MODE=BTC
 
 ## Install
