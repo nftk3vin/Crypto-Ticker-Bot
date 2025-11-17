@@ -1,14 +1,12 @@
 import os, asyncio, aiohttp, discord
 from dotenv import load_dotenv
 
-# load env file thing
 load_dotenv()
 
 TOKEN = os.getenv("BOT_TOKEN")     # bot token from discord dev portal
 GUILD_ID = int(os.getenv("GUILD_ID"))  # guild id (server id)
 MODE = os.getenv("MODE", "BTC")   # default will be BTC (BTC ETH BTC.D ETH.D)
 
-# set intents cuz bot edits nicknames and show status
 intents = discord.Intents.default()
 intents.guilds=True
 intents.members=True
@@ -16,7 +14,6 @@ intents.presences=True
 
 client = discord.Client(intents=intents)
 
-# format numbers into something easier to read like 62,500
 def format_price(num):
     return f"{num:,.0f}"
 
@@ -29,8 +26,7 @@ async def fetch_json(session, url):
 
 
 async def updater_loop():
-    await client.wait_until_ready()  # hope this works
-
+    await client.wait_until_ready()
     guild = client.get_guild(GUILD_ID)
     if not guild:
         print("bot not in server? check id?")
@@ -82,7 +78,7 @@ async def updater_loop():
                         status = discord.Status.online
                     )
 
-                    wait = 3600 # 1 hour. dont spam them
+                    wait = 3600 # 1 hour. dont spam
 
             except Exception as e:
                 print("oop error:", e)
@@ -94,7 +90,7 @@ async def updater_loop():
 @client.event
 async def on_ready():
     print("logged in as", client.user, " MODE:", MODE)
-    asyncio.create_task(updater_loop()) # start looping thing
+    asyncio.create_task(updater_loop()) # start looping
 
 
 client.run(TOKEN)
