@@ -31,3 +31,4 @@ MODE=BTC
 ```bash
 pip install discord.py python-dotenv aiohttp
 python discord_ticker.py
+sync test Mon Jan 19 17:20:37 IST 2026
