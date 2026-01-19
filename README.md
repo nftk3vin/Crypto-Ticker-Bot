@@ -25,10 +25,3 @@ MODE=BTC
 1. make a folder
 2. paste the bot code into `discord_ticker.py`
 3. make a `.env` file with the values above
-
-## Run
-
-```bash
-pip install discord.py python-dotenv aiohttp
-python discord_ticker.py
-sync test Mon Jan 19 17:20:37 IST 2026
