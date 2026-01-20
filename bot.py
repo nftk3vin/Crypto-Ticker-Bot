@@ -53,7 +53,7 @@ async def updater_loop():
 
                     await guild.me.edit(nick = nick_name)
 
-                    change = f"{'+' if percent >= 0 else ''}{percent:.2f}%" # makes +4.20%
+                    change = f"{'+' if percent >= 0 else ''}{percent:.2f}%"
                     await client.change_presence(
                         activity = discord.CustomActivity(name = change),
                         status=discord.Status.online
