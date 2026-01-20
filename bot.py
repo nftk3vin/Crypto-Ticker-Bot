@@ -20,7 +20,7 @@ def format_price(num):
 
 async def fetch_json(session, url):
     async with session.get(url, timeout = 10) as r:
-        r.raise_for_status()   # if bad response error
+        r.raise_for_status()
         data = await r.json()
         return data
 
