@@ -5,7 +5,7 @@ load_dotenv()
 
 TOKEN = os.getenv("BOT_TOKEN")
 GUILD_ID = int(os.getenv("GUILD_ID"))
-MODE = os.getenv("MODE", "BTC")   # default will be BTC (BTC ETH BTC.D ETH.D)
+MODE = os.getenv("MODE", "BTC")
 
 intents = discord.Intents.default()
 intents.guilds=True
