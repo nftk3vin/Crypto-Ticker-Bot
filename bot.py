@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TOKEN = os.getenv("BOT_TOKEN")     # bot token from discord dev portal
+TOKEN = os.getenv("BOT_TOKEN")
 GUILD_ID = int(os.getenv("GUILD_ID"))  # guild id (server id)
 MODE = os.getenv("MODE", "BTC")   # default will be BTC (BTC ETH BTC.D ETH.D)
 
