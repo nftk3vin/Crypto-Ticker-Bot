@@ -37,7 +37,7 @@ async def updater_loop():
         while not client.is_closed():
             try:
                 if MODE == "BTC" or MODE == "ETH":
-                    # ticker from binance
+
                     if MODE == "BTC":
                         symbol = "BTCUSDT"
                     else:
