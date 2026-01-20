@@ -77,7 +77,7 @@ async def updater_loop():
                         status = discord.Status.online
                     )
 
-                    wait = 3600 # 1 hour. dont spam
+                    wait = 3600 # 1 hour.
 
             except Exception as e:
                 print("oop error:", e)
