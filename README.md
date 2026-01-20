@@ -16,7 +16,6 @@ Examples:
 
 BOT_TOKEN=yourbot_token_here
 GUILD_ID=your_guild_id
-
 MODE=BTC
 
 ## Install
