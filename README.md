@@ -24,4 +24,4 @@ MODE=BTC
 
 1. make a folder
 2. paste the bot code into `discord_ticker.py`
-3. make a `.env` file with the values above
+3. make a `.env` file with the values above 
