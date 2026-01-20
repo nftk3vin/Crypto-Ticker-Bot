@@ -15,7 +15,6 @@ Examples:
 ## .env file example
 
 BOT_TOKEN=yourbot_token_here
-
 GUILD_ID=your_guild_id
 
 MODE=BTC
