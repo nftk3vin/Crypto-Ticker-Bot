@@ -12,7 +12,7 @@ Examples:
 - BTC.D → Shows btc dominance
 - ETH.D → Shows eth dominance
 
-## .env file example 
+## .env file example
 
 BOT_TOKEN=yourbot_token_here
 
