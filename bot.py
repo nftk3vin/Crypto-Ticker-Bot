@@ -81,7 +81,7 @@ async def updater_loop():
 
             except Exception as e:
                 print("oop error:", e)
-                wait = 60 # retry in 1 min
+                wait = 60
 
             await asyncio.sleep(wait)
 
