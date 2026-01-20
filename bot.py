@@ -59,7 +59,7 @@ async def updater_loop():
                         status=discord.Status.online
                     )
 
-                    wait = 120 # 2mins update
+                    wait = 120
                 else:
                     j = await fetch_json(session,"https://api.coingecko.com/api/v3/global")
 
