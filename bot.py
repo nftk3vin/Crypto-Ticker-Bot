@@ -77,7 +77,7 @@ async def updater_loop():
                         status = discord.Status.online
                     )
 
-                    wait = 3600 # 1
+                    wait = 3600
 
             except Exception as e:
                 print("oop error:", e)
