@@ -48,7 +48,7 @@ async def updater_loop():
                     price = float(j["lastPrice"])
                     percent = float(j["priceChangePercent"])
 
-                    # change nick to price (only numbers)
+
                     nick_name = format_price(price)
 
                     await guild.me.edit(nick = nick_name)
