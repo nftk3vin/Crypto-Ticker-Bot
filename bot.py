@@ -89,7 +89,7 @@ async def updater_loop():
 @client.event
 async def on_ready():
     print("logged in as", client.user, " MODE:", MODE)
-    asyncio.create_task(updater_loop()) # start looping
+    asyncio.create_task(updater_loop())
 
 
 client.run(TOKEN)
