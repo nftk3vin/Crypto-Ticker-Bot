@@ -61,7 +61,6 @@ async def updater_loop():
 
                     wait = 120 # 2mins update
                 else:
-                    # dominance mode (coingecko api)
                     j = await fetch_json(session,"https://api.coingecko.com/api/v3/global")
 
                     if MODE == "BTC.D":
